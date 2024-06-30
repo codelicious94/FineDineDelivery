@@ -1,0 +1,518 @@
+body, html {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+/* Header */
+
+header {
+    box-shadow: 0px 8px 5px 0px rgba(15, 15, 15, 0.1);
+}
+
+.container {
+    max-width: 100%;
+}
+
+.menu {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar {
+    height: 120px;
+    z-index: 999;
+    background-color: rgb(255,128,0);
+}
+
+.fdd-logo {
+    margin-left: 12px;
+    height: 80px;
+    width: 160px;
+}
+
+#fullAmount {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.basket-with-amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 4px black;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.basket-with-amount p {
+    margin-bottom: 0;
+    color: black;
+}
+
+#basket-toggle {
+    display: flex;
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+}
+
+.nav-menu-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.swiss-logo {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: solid 4px white;
+}
+
+.burger-menu {
+    margin-right: 12px;
+    height: 40px;
+    width: 40px;
+}
+
+/* Sidebar - Basket */
+
+.sidebar {
+    position: fixed;
+    z-index: 998;
+    left: 80%;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    box-shadow: 0px 8px 5px 0px rgba(15, 15, 15, 0.1);
+    transition: all 115ms ease-in-out;
+    overflow-y: scroll;
+    padding-bottom: 180px;
+    background-color: white;
+}
+
+.cancel-button {
+    display: none;
+    height: 32px;
+}
+
+.basket-title {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-bottom: 24px;
+    text-align: center;
+    border-bottom: solid 1px lightgray;
+}
+
+.basket {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.basket-choose {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 24px 52px 24px 52px;
+    border-bottom: solid 2px lightgray;
+}
+
+.basket-logo {
+    height: 52px;
+    width: 52px;
+    margin-bottom: 24px;
+}
+
+.basket-button {
+    text-align: center;
+}
+
+.btn {
+    margin-top: 24px;
+}
+
+.amount-icons {
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+}
+
+.food-on-basket {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px;
+}
+
+.food-on-basket h3 {
+    font-size: 18px;
+    margin-right: 12px;
+    max-width: 180px;
+}
+
+.food-on-basket p {
+    font-size: 16px;
+    max-width: 120px;
+}
+
+.filledShoppingCartAddRemoveAmountContainer {
+    display: flex;
+    gap: 8px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-details-position {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 24px 0 24px;
+}
+
+/* Main Section */
+
+.main-images {
+    position: relative;
+}
+
+.main-image {
+    width: 80%;
+    height: 450px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.billys-logo {
+    position: absolute;
+    left: 40%;
+    transform: translateX(-40%);
+    bottom: -100px;
+    z-index: 999;
+}
+
+.rating-container {
+    margin: 32px 0 32px 32px;
+}
+
+.rating {
+    height: 32px;
+    width: 150px;
+}
+
+.rating-stars {
+    display: flex;
+    align-items: center;
+}
+
+.rating-container a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(255,128,0);
+}
+
+.slider-menu {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 24px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.slider-menu a:hover {
+    background-color: rgb(239,237,234);
+}
+
+.delivery-costs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 16px;
+}
+
+.delivery-costs span {
+    padding-right: 12px;
+}
+
+.delivery-image {
+    height: 16px;
+    width: 16px;
+    margin-right: 12px;
+}
+
+.description {
+    margin-left: 32px;
+}
+
+/* Section Dishes */
+
+.category {
+    margin-left: 32px;
+    width: 77%;
+}
+
+.category-image-container {
+    width: 100%;
+    height: 180px; 
+    overflow: hidden; 
+    margin-bottom: 16px; 
+}
+
+.category-image {
+    width: 98.7%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.dish {
+    width: 76%;
+    margin-left: 32px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    padding: 12px;
+    border-radius: 10px;
+    border: solid 2px black;
+}
+
+.dish:hover {
+    background-color: rgb(239,237,234);
+}
+
+.add-dish {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-dish-button {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer {
+    height: 180px;
+    width: 100%;
+    z-index: 999;
+    background-color: rgb(239,237,234);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    padding-right: 24px;
+}
+
+footer p {
+    padding-bottom: 24px;
+}
+
+.footer-links {
+    margin-top: 40px;
+}
+
+/* Scroll */
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(239,237,234);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255,128,0);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255,128,0);
+}
+
+/* responsive / mediaquerry */
+
+@media (min-width: 1400px) {
+    .sidebar {
+        display: block !important;
+    }
+}
+
+@media (max-width: 1400px) {
+    .sidebar {
+        z-index: 999;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        top: 120px;
+        width: 100%;
+        left: 0;
+        padding-bottom: 12px;
+    }
+
+    .main-image {
+        width: 100%;
+    }
+
+    .slider-menu {
+        width: 100%;
+    }
+
+    .category {
+        width: 100%;
+        padding-right: 48px;
+    }
+
+    .dish {
+        width: 95%;
+    }
+
+    .cancel-button {
+        display: flex;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1000px) {  
+    .dish {
+        width: 92%;
+    }
+
+    .billys-logo {
+        height: 140px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .rating-container h1 {
+        font-size: 24px;
+    }
+
+    .rating {
+        height: 24px;
+        width: 110px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer p {
+        padding: 0;
+    }
+
+    .swiss-logo {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 650px) {  
+    .dish {
+        width: 88%;
+    }
+
+    .billys-logo {
+        left: 70%;
+    }
+
+    .slider-menu {
+        gap: 0;
+    }
+
+    .menu-link {
+        font-size: 16px;
+        padding: 4px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .fdd-logo {
+        height: 60px;
+        width: 120px;
+    }
+
+    .swiss-logo {
+        height: 32px;
+        width: 32px;
+    }
+
+    .burger-menu {
+        height: 32px;
+        width: 32px;
+    }
+}
+
+
+@media (max-width: 480px) {  
+    .billys-logo {
+        display: none;
+    }
+
+    #basket-toggle {
+        height: 28px;
+        width: 28px;
+    }
+
+    .nav-menu-right {
+        gap: 8px;
+    }
+
+    .fdd-logo {
+        width: 100px;
+    }
+
+    .burger-menu {
+        margin-right: 0;
+    }
+
+    footer {
+        height: 250px;
+    }
+}
